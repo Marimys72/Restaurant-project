@@ -1,4 +1,4 @@
-# Самостоятельная верстка сайта по макету из Figma
+# Самостоятельная верстка сайта по макету из Figma + адаптив
 
 ## Технологии
 ![HTML5](https://img.shields.io/badge/-HTML5-e34f26?logo=html5&logoColor=white)
