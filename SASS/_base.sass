@@ -1,0 +1,856 @@
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+$color-green-medium: #00D664
+$color-green-light: #F3F3F3
+
+$color-white: #FFFFFF
+$color-white-light: #f5f5f5
+
+$color-gray-light: #acacac
+$color-gray-dark: #696969
+$color-gray-medium: #7C7C7C
+
+$color-cian-dark: #1E266D
+
+$color-violett-dark: #39374D
+
+$color-black-dark: #121212
+
+$color-background: #F7F4FB
+
+$color-item: #777777
+
+$color-gold: #F5AD0D
+
+$color-form-input: #EDFCF4
+
+html
+    overflow-x: hidden
+
+body
+    font-family: "Lato", sans-serif
+    font-weight: 400
+    color: $color-white
+    font-size: 18px
+    background-color: $color-white
+    line-height: 17px
+    background-image: url(../img/background-header.png)
+    background-repeat: no-repeat
+    background-position: top center
+    overflow-x: hidden
+.container
+    max-width: 1450px
+    margin: 0 auto
+    padding-left: 15px
+    padding-right: 15px
+
+@media (max-width: 1199px)
+    .container
+        width: 960px
+
+    body
+        background-size: contain
+
+    body .promo
+        padding-top: 75px
+        padding-bottom: 70px
+
+    .promo .container .title-first
+        &__main
+            font-size: 50px
+            line-height: 55px
+
+    body .header .container .navigation
+        &__logo
+            display: none
+        &__btn
+            margin: 20px auto 0px
+
+    .title-second
+        width: 900px
+    .paragraph
+        width: 900px
+    .about-wrapper
+        width: 900px
+        height: 275px
+        margin-right: 0
+    .about-box
+        width: 900px
+
+    .about-column-1
+        transform: translateY(-120px)
+
+    .about-column-2
+        display: none
+    .about-list
+        align-items: center
+        width: 600px
+    .title-third
+        display: none
+
+    .section-service .container .section-service
+        &__container
+            width: 900px
+            margin: 0
+        &__icon
+            display: none
+        &__btn
+            margin-top: 5px
+
+    .section-service .container .service-wrapper
+        width: 900px
+        height: 600px
+        justify-content: center
+
+    .section-service .container .service-wrapper .service-card
+        padding-top: 29px
+        padding-bottom: 30px
+        &:nth-child(2)
+            margin-right: 0
+
+    body .section-about
+        padding-top: 99px
+        padding-bottom: 38px
+
+    body .section-service
+        padding-top: 55px
+        padding-bottom: 43px
+
+    body .section-menu
+        padding-top: 60px
+        padding-bottom: 68px
+
+    .section-menu .container .menu-box
+        width: 676px
+        padding: 30px 21px 70px 18px
+        &__category-list
+            margin-bottom: 44px
+        &__menu-list
+            width: 515px
+            height: 444px
+        &__menu-item
+            &:not(:last-child)
+                margin-bottom: 15px
+
+    body .section-video
+        padding-top: 67px
+        padding-bottom: 30px
+
+    .section-video .wrapper-video
+        width: 914px
+
+    .section-video .wrapper-video .box-text
+        width: 507px
+        height: 473px
+        padding-top: 0
+
+    .box-text .title-fourth
+        font-size: 24px
+        margin-bottom: 25px
+
+    body .section-store
+        padding-top: 40px
+
+    .section-store .card-list
+        width: 1198px
+        margin-bottom: 30px
+
+    .section-store .slider-list-container
+        width: 992px
+
+    .section-store .slider-list-container .slider-list
+        justify-content: flex-start
+        &__item
+            &:not(:last-child)
+                margin-right: 10px
+
+    .section-store .slider-list-container .slider-item
+        width: 250px
+        padding: 41px 30px 30px 30px
+        &__text
+            font-size: 12px
+            line-height: 20px
+            width: 190px
+            margin-bottom: 28px
+
+    body .section-store
+        &__line
+            width: 900px
+            margin-bottom: 50px
+
+    .feedback-form-container .feedback-form
+        justify-content: center
+
+    .footer .container .footer-box .footer-inner
+        width: 900px
+        padding-top: 45px
+        padding-bottom: 40px
+
+    .footer .container .footer-box .footer-inner .footer-nav
+        justify-content: center
+
+    .footer .container .footer-box .footer-top
+        width: 900px
+
+    body .footer .container .footer-box
+        &__line
+            display: inline-block
+            width: 900px
+
+    .footer .container .footer-box .footer-inner .footer-nav .footer-block
+        width: 146px
+        &:nth-child(1)
+            margin-right: 20px
+        &:nth-child(2)
+            margin-right: 35px
+        &:nth-child(3)
+            margin-right: 30px
+        &:nth-child(4)
+            margin-right: 20px
+
+@media (max-width: 991px)
+    .container
+        width: 720px
+
+    body .header .container .navigation .navigation-list
+        &__item:not(:last-child)
+            margin-right: 20px
+
+    body .header .container .navigation
+        &__btn
+            display: none
+
+    body .header .container .navigation .users-navigation
+        flex-direction: column
+        justify-content: space-between
+        &__item:not(:last-child)
+            margin-right: 0
+            margin-bottom: 10px
+
+    body .promo
+        padding-top: 15px
+
+    body .promo .container .title-first
+        &__secondary
+            font-size: 38px
+            margin-bottom: 14px
+        &__main
+            font-size: 40px
+            line-height: 45px
+
+    body .promo .container .paragraph
+        width: 563px
+        margin: 0 auto
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 20px
+
+    body .promo
+        &__btn
+            border-radius: 38px
+            padding: 7px 15px
+            width: 157px
+            font-size: 14px
+            line-height: 17px
+
+    body .section-about .container .about-box
+        width: 720px
+
+    body .section-about .container .about-box .title-second
+        width: 700px
+        &__main
+            font-size: 30px
+            line-height: 20px
+        &__secondary
+            font-size: 35px
+            line-height: 20px
+
+    body .section-about
+        padding-top: 110px
+        padding-bottom: 17px
+
+    body .section-about .container .about-box .paragraph
+        width: 720px
+        font-size: 15px
+
+    body .section-about .container .about-box .about-wrapper
+        width: 720px
+
+    body .section-about .container .about-box .about-wrapper .about-column-1 .about-list .paragraph
+        font-size: 12px
+
+    body .section-about .container .about-box .about-wrapper .about-column-1 .about-list
+        &__box
+            width: 359px
+
+    body .section-service .container .section-service
+        &__container
+            width: 700px
+
+    body .section-service .container .title-fourth
+        font-size: 28px
+        line-height: 20px
+        
+
+    body .section-service .container .service-wrapper
+        width: 700px
+        height: 500px
+
+    body .section-service .container .service-wrapper .service-card
+        width: 250px
+        padding-top: 17px
+        padding-bottom: 18px
+        &__icon
+            margin-bottom: -7px
+        &__title-fifth
+            margin-bottom: 3px
+
+    body .section-menu .container .title-fourth
+        font-size: 28px
+        line-height: 35px
+
+    body .section-menu .container .menu-box
+        width: 616px
+        padding: 34px 21px 26px 7px
+
+    body .section-video .container .wrapper-video .box-text
+        display: none
+
+    body .section-video .container .wrapper-video
+        width: 824px
+
+    body .section-store .container .card-list
+        width: 713px
+        justify-content: center
+
+    body .section-store .container .slider-list-container .slider-list
+        &__item
+            &:nth-child(3n)
+                display: none
+
+    body .section-store .container .slider-list-container
+        &__slides
+            display: none
+
+    body .section-store .container .title-fourth
+        font-size: 28px
+
+    body .section-store
+        &__line
+            width: 563px
+            margin-bottom: 27px
+
+    body .footer
+        padding-top: 22px
+        padding-bottom: 22px
+
+    body .footer .container .footer-box .footer-top
+        width: 700px
+
+    body .footer .container .footer-box
+        &__line
+            width: 695px
+
+    body .footer .container .footer-box .footer-inner
+        width: 700px
+        padding-top: 24px
+        padding-bottom: 24px
+
+    body .footer .container .footer-box .footer-inner .footer-nav .footer-block
+        &:last-child
+            display: none
+
+    body .footer .container .footer-box .footer-inner .footer-nav .footer-block dd .nav-list
+        &__link
+            line-height: 35px
+
+@media (max-width: 767px)
+    .container
+        width: 540px      
+
+    body .promo .container .title-first
+        &__main
+            font-size: 25px
+            line-height: 35px
+            margin-bottom: 60px
+        &__secondary
+            margin-bottom: 50px
+
+    body .promo .container .paragraph
+        display: none
+
+    body .promo
+        &__btn
+            width: 129px
+            line-height: 13px
+            font-size: 12px
+            padding-top: 5px
+            padding-bottom: 5px
+
+    .header .container .navigation 
+        display: none
+
+    body .section-about .container .about-box
+        width: 500px
+
+    body .section-about .container .about-box .title-second
+        width: 500px
+        &__main
+            font-size: 22px
+            line-height: 18px
+        &__secondary
+            font-size: 30px
+            line-height: 18px
+
+    body .section-about
+        padding-top: 60px
+        padding-bottom: 0px
+
+    body .section-about .container .about-box .paragraph
+        width: 480px
+        font-size: 12px
+        line-height: 14px
+        margin-bottom: 15px
+
+    body .section-about .container .about-box .about-wrapper
+        width: 500px
+
+    body .section-about .container .about-box .about-wrapper .about-column-1 .about-list .paragraph
+        font-size: 10px
+
+    body .section-about .container .about-box .about-wrapper .about-column-1 .about-list
+        width: 462px
+        &__box
+            width: 359px
+            .title-fifth
+                font-size: 15px
+                line-height: 35px
+        &__item
+            margin-bottom: 0px
+
+    body .section-service .container .section-service
+        &__container
+            width: 500px
+        &__btn
+            width: 140px
+            padding: 12px 3px
+            font-size: 15px
+            line-height: 12px
+
+    body .section-service .container .title-fourth
+        font-size: 20px
+        line-height: 18px
+        margin-bottom: 30px
+        
+    body .section-service .container .service-wrapper
+        width: 500px
+        height: 450px
+
+    body .section-service .container .service-wrapper .service-card
+        width: 200px
+        padding-top: 15px
+        padding-bottom: 15px
+        height: 210px
+        &__icon
+            margin-bottom: -7px
+        &__title-fifth
+            margin-bottom: 1px
+            font-size: 15px
+        &__btn
+            font-size: 12px
+        .paragraph-small
+            font-size: 12px
+            width: 180px
+
+    body .section-menu
+        padding-top: 41px
+        padding-bottom: 38px
+
+    body .section-menu .container .title-fourth
+        font-size: 20px
+        line-height: 25px
+        margin-bottom: 15px
+
+    body .section-menu .container .menu-box
+        width: 500px
+        padding: 19px 18px 10px 16px
+        &__category-list
+            margin-bottom: 4px
+
+    body .section-menu .container .menu-box .menu-item
+        &__title
+            font-size: 14px
+        &__price
+            font-size: 16px
+        &__description
+            font-size: 14px
+        &__line
+            margin-right: 21px
+            &_second
+                width: 165px
+            &_fourth
+                width: 214px
+            &_fifth
+                width: 216px
+            &_sixth
+                width: 230px
+
+    body .section-video
+        display: none
+
+    body .section-store .container .card-list
+        width: 500px
+        justify-content: center
+        align-items: center
+        &__item
+            &__title
+                font-size: 12px
+            &:not(:last-child) 
+                margin-right: 0px
+            &:nth-child(1), &:nth-child(5)
+                margin-right: 0px
+            &:nth-child(-n+4)
+                margin-bottom: 0px
+
+    body .section-store
+        &__btn
+            line-height: 15px
+            font-size: 15px
+            padding-top: 13px
+            padding-bottom: 13px
+            width: 158px
+            margin-bottom: 25px
+
+    body .section-store .container .slider-list-container .slider-list
+        margin-bottom: 0px
+        &__item
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                display: none
+
+    body .section-store .container .slider-list-container
+        width: 515px
+        margin-bottom: 20px
+        &__slides
+            display: none
+
+    body .section-store .container .slider-list-container .slider-list
+        justify-content: center
+
+    body .section-store .container .title-fourth
+        font-size: 25px
+        line-height: 25px
+        margin-bottom: 25px
+
+    body .section-store
+        &__line
+            width: 500px
+            margin-bottom: 20px
+
+    .feedback-form-container .feedback-form
+        justify-content: center
+        align-items: center
+        margin-bottom: 30px
+        &__email
+            padding: 10px 100px 10px 10px
+            width: 300px
+            border-radius: 30px
+            margin-bottom: 15px
+        &__btn
+            width: 122px
+            padding-top: 10px
+            padding-bottom: 10px
+
+    body .footer
+        padding-top: 12px
+        padding-bottom: 12px
+
+    body .footer .container .footer-box .footer-top
+        width: 500px
+        margin-bottom: 5px
+
+    body .footer .container .footer-box .footer-top .footer-list-1
+        &__link
+            font-size: 10px
+
+    body .footer .container .footer-box
+        &__line
+            width: 500px
+            margin-bottom: 10px
+
+    body .footer .container .footer-box .footer-inner
+        width: 500px
+        padding-top: 10px
+        padding-bottom: 10px
+
+    body .footer .container .footer-box .footer-inner .footer-nav .footer-block
+        width: 90px
+        &:last-child
+            display: none
+        dt
+            font-size: 10px
+            margin-bottom: 10px
+
+    body .footer .container .footer-box .footer-inner .footer-nav .footer-block dd .nav-list
+        &__link
+            line-height: 20px
+            font-size: 10px
+
+    body .footer .container .footer-bottom
+        width: 500px
+
+    body .footer .container .footer-bottom .copyright, body .footer .container .footer-bottom .policy
+        font-size: 10px
+
+    body .footer .container .footer-top .sozial-list
+        &__link
+            img
+                width: 10px
+                height: 10px
+
+@media (max-width: 575px)
+    .container
+        width: 100%
+
+    body
+        background-size: auto 400px
+
+    body .promo
+        width: 100%
+
+    body .promo .container
+        width: 100%
+
+    body .promo .container .title-first
+        &__main
+            font-size: 20px
+        &__secondary
+            margin-bottom: 60px
+
+    body .promo .container .paragraph
+        display: none
+
+    .header .container .navigation 
+        display: none
+
+    body .section-about .container .about-box
+        width: 280px
+
+    body .section-about .container .about-box .title-second
+        width: 280px
+        &__main
+            font-size: 18px
+            line-height: 15px
+            text-align: center
+        &__secondary
+            font-size: 25px
+            line-height: 15px
+            text-align: center
+
+    body .section-about .container .about-box .paragraph
+        width: 280px
+        font-size: 10px
+        margin-bottom: 10px
+
+    body .section-about .container .about-box .about-wrapper
+        width: 250px
+
+    body .section-about .container .about-box .about-wrapper .about-column-1 .about-list .paragraph
+        font-size: 10px
+        width: 220px
+
+    body .section-about .container .about-box .about-wrapper .about-column-1 .about-list
+        width: 422px
+        &__box
+            width: 359px
+            .title-fifth
+                font-size: 12px
+                line-height: 25px
+        &__item
+            margin-bottom: 0px
+            &::before
+                margin-right: 10px
+
+    body .section-service .container .section-service
+        &__container
+            width: 100%           
+        
+    body .section-service .container .service-wrapper
+        width: 320px
+        height: 250px
+        justify-content: center
+
+    body .section-service .container .service-wrapper .service-card
+        margin-right: 0px
+        &:not(:nth-child(1))
+            display: none
+
+    body .section-menu
+        padding-top: 28px
+        padding-bottom: 28px
+
+    body .section-menu .container .title-fourth
+        display: none
+
+    body .section-menu .container .menu-box
+        width: 283px
+        &__category-list
+            margin-bottom: 4px
+            width: 250px
+        &__menu-item
+            &:not(:last-child)
+                margin-bottom: 5px
+        &__menu-list
+            height: 395px
+            width: 320px
+
+    body .section-menu .container .menu-box .category-list
+        &__category-item
+            font-size: 10px
+            line-height: 14px
+            &:not(:last-child)
+                margin-right: 20px
+                
+
+    body .section-menu .container .menu-box .menu-item
+        &__title
+            font-size: 10px
+        &__photo
+            margin-right: 10px
+        &__price
+            font-size: 10px
+        &__description
+            font-size: 10px
+        &__line
+            margin-right: 5px
+            &_first
+                width: 65px
+            &_third
+                width: 65px
+            &_second
+                width: 30px
+            &_fourth
+                width: 60px
+            &_fifth
+                width: 60px
+            &_sixth
+                width: 70px
+
+    body .section-video
+        display: none
+
+    body .section-store .container .card-list
+        margin-bottom: 15px
+        width: 280px
+        justify-content: center
+        align-items: center
+        &__item
+            &:not(:last-child) 
+                margin-right: 0px
+            &:nth-child(1), &:nth-child(5)
+                margin-right: 0px
+            &:nth-child(-n+4)
+                margin-bottom: 0px
+
+    body .section-store .container .card-list .card-item
+        &__link
+            margin-bottom: 5px
+        &__title
+            font-size: 14px
+            margin-bottom: 5px
+        &__info-block
+            margin-bottom: 10px
+        &__price
+            font-size: 17px
+
+    body .section-store
+        &__btn
+            line-height: 10px
+            font-size: 13px
+            padding: 10px 12px
+            width: 128px
+            margin-bottom: 25px
+
+    body .section-store .container .slider-list-container .slider-list
+        margin-bottom: 0px
+        justify-content: center
+        width: 290px
+        &__item
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                display: none
+            &:not(:last-child)
+                margin-right: 0px
+        &::before
+            display: none
+        &::after
+            display: none
+
+    body .section-store .container .slider-list-container
+        width: 300px
+        margin-bottom: 20px
+        &__slides
+            display: none
+
+    body .section-store .container .slider-list-container .slider-list .slider-item
+        width: 230px
+
+    body .section-store .container .title-fourth
+        font-size: 18px
+        line-height: 18px
+        margin-bottom: 15px
+
+    body .section-store
+        &__line
+            display: none
+
+    .feedback-form-container .feedback-form
+        display: none
+
+    body .section-map
+        display: none
+
+    body .footer
+        padding-top: 10px
+        padding-bottom: 10px
+
+    body .footer .container .footer-box .footer-top
+        width: 100%
+        margin-bottom: 5px
+
+    body .footer .container .footer-box .footer-top .footer-list-1
+        &__link
+            font-size: 8px
+        &__item
+            margin-right: 10px
+
+    body .footer .container .footer-box
+        width: 100%
+        &__line
+            display: none
+
+    body .footer .container .footer-box .footer-inner
+        display: none
+
+    body .footer .container .footer-bottom
+        display: none
+
+    body .footer .container .footer-bottom .copyright, body .footer .container .footer-bottom .policy
+        font-size: 8px
+
+    body .footer .container .footer-top .sozial-list
+        &__link
+            img
+                width: 8px
+                height: 8px
+        &__item
+            margin-right: 10px
+
+    
+
+        

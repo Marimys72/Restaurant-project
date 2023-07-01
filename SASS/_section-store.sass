@@ -1,0 +1,82 @@
+.section-store
+    padding-top: 130px
+    &__btn
+        display: block
+        width: 173px
+        margin-left: auto
+        margin-right: auto
+        border-radius: 30px
+        padding: 14px 25px
+        font-weight: 500
+        font-size: 18px
+        line-height: 27px
+        &::after
+            content: ""
+            background-image: url("../icons/Down10px.svg")
+            display: inline-block
+            width: 10px
+            height: 10px
+            color: $color-white
+            margin-left: 28px
+            transform: rotate(-90deg)
+    &__line
+        display: block
+        width: 1203px
+        border: 1px solid rgba(105, 105, 105, 0.1)
+        margin: 0px auto 103px
+
+.card-list
+    width: 1255px
+    margin-left: auto
+    margin-right: auto
+    display: flex
+    flex-wrap: wrap
+    list-style: none
+    &__item
+        &:nth-child(odd)
+            width: 298px
+        &:nth-child(even)
+            width: 294px
+        &:not(:last-child) 
+            margin-right: 18px
+        &:nth-child(1), &:nth-child(5)
+            margin-right: 16px
+        &:nth-child(-n+4)
+            margin-bottom: 39px
+        &:hover
+            transform: translateY(-14px)
+            transition: 0.1s
+
+.card-item
+    position: relative
+    &__title
+        font-weight: 600
+        line-height: 18px
+        letter-spacing: -1px
+        color: $color-cian-dark
+        margin-bottom: 14px
+    &__link
+        display: inline-block
+        margin-bottom: 22px
+    &__info-block
+        display: flex
+        justify-content: space-between
+    &__price
+        font-weight: 400
+        font-size: 18px
+        line-height: 18px
+        letter-spacing: -1px
+        color: $color-gray-dark
+    &__label
+        position: absolute
+        font-weight: 400
+        font-size: 14px
+        line-height: 18px
+        color: $color-white
+        background-color: $color-green-medium
+        border-radius: 5px
+        padding: 6px 12px 5px 13px
+        top: 10px
+        right: 10px
+
+        

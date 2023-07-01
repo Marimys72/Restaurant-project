@@ -1,0 +1,101 @@
+.slider-list-container
+    width: 1353px
+    margin-left: auto
+    margin-right: auto
+    &__slides
+        display: block
+        margin-left: auto
+        margin-right: auto
+
+.slider-list
+    display: flex
+    justify-content: center
+    align-items: start
+    flex-wrap: wrap
+    list-style: none
+    &__item
+        &:not(:last-child)
+            margin-right: 30px
+    &::before
+        content: ""
+        background-image: url("../icons/slider.svg")
+        display: inline-block
+        width: 45px
+        height: 45px
+        margin-right: 30px
+        align-self: center
+    &::after
+        content: ""
+        background-image: url("../icons/slider.svg")
+        display: inline-block
+        width: 45px
+        height: 45px
+        margin-left: 30px
+        align-self: center
+        transform: rotate(180deg)        
+
+.slider-item
+    background-color: $color-white
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1)
+    border-radius: 10px
+    width: 381px
+    padding: 51px 30px 43px 38px
+    &__persone
+        margin-bottom: 22px
+    &__feedback
+        font-weight: 600
+        font-size: 18px
+        line-height: 22px
+        color: $color-cian-dark
+        margin-bottom: 20px
+        &::after
+            content: ""
+            background-image: url("../icons/in-love1.svg")
+            display: inline-block
+            width: 16px
+            height: 16px
+            margin-left: 8px
+            vertical-align: middle
+        &_work
+            &::after
+                content: ""
+                background-image: url("../icons/icon-work.svg")
+                display: inline-block
+                width: 16px
+                height: 16px
+                margin-left: 8px
+                vertical-align: middle 
+    &__text
+        font-weight: 600
+        font-size: 15px
+        line-height: 24px
+        color: $color-gray-dark
+        width: 313px
+        margin-bottom: 28px
+
+.persone-box
+    display: flex
+    align-items: center
+    &__img
+        display: inline-block
+        margin-right: 17px
+    &__name
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        color: $color-green-medium
+    &__description
+        font-weight: 500
+        font-size: 15px
+        line-height: 22px
+        color: $color-gray-light
+
+.box-rating
+    display: flex
+    align-items: center
+    &__rating
+        font-weight: 500
+        font-size: 17px
+        line-height: 24px
+        color: $color-gold
+        margin-right: 15px

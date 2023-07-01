@@ -1,0 +1,94 @@
+.section-menu
+    background: url("../img/section-menu.png") no-repeat top center
+    background-size: cover
+    padding-top: 100px
+    padding-bottom: 108px
+
+.menu-box
+    background-color: $color-white
+    width: 1286px
+    margin: 0 auto
+    padding: 30px 21px 70px 18px
+    &__category-list
+        border-bottom: 1px solid rgba(105, 105, 105, 0.2)
+        margin-bottom: 74px
+    &__menu-list
+        width: 1137px
+        height: 226px
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        margin: 0 auto
+    &__menu-item
+        &:not(:nth-child(3n))
+            margin-bottom: 20px
+        &:nth-child(-n+3)
+            width: 559px
+        
+.menu-item
+    display: flex
+    justify-content: flex-start
+    width: 576px
+    &__box
+        width: 493px
+    &__photo
+        display: block
+        border-radius: 10px
+        margin-right: 18px
+    &__title
+        font-weight: 600
+        font-size: 22px
+        line-height: 24px
+        color: $color-cian-dark
+        margin-bottom: 8px
+        display: inline-block
+    &__description
+        font-family: "Roboto"
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: -1px
+        color: $color-gray-dark
+    &__line
+        display: inline-block
+        border-bottom: 1px dashed rgba(105, 105, 105, 0.6)
+        margin-right: 21px
+        &_first
+            width: 215px
+        &_second
+            width: 135px
+        &_third
+            width: 220px
+        &_fourth
+            width: 208px
+        &_fifth
+            width: 213px
+        &_sixth
+            width: 236px
+    &__price
+        font-weight: 400
+        font-size: 22px
+        line-height: 26px
+        text-align: center
+        color: $color-black-dark
+        display: inline-block
+    &__link
+        &:hover
+            opacity: 0.5
+
+.category-list
+    display: flex
+    justify-content: center
+    list-style: none
+    &__category-item
+        color: $color-item
+        font-weight: 500
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: -1px
+        margin-bottom: 25px
+        &:not(:last-child)
+            margin-right: 80px
+        &_active
+            color: $color-cian-dark
+

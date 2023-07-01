@@ -1,0 +1,69 @@
+.section-service
+    padding-top: 165px
+    padding-bottom: 103px
+    background-color: $color-background
+    &__container
+        width: 1285px
+        position: relative
+        margin-left: auto
+        margin-right: auto
+    &__icon
+        position: absolute
+        right: -2%
+        bottom: 1%
+        z-index: 1
+    &__btn
+        display: block
+        margin-top: 76px
+        width: 194px
+        margin-left: auto
+        margin-right: auto
+        border-radius: 30px
+        padding: 14px 35px
+        font-weight: 500
+        font-size: 18px
+        line-height: 27px
+        &::after
+            content: ""
+            background-image: url("../icons/Down10px.svg")
+            display: inline-block
+            width: 10px
+            height: 10px
+            color: $color-white
+            margin-left: 7px
+            transform: rotate(-90deg)
+        
+.service-wrapper
+    width: 1234px
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    margin: 0 auto
+    position: relative
+    z-index: 3    
+
+.service-card
+    width: 286px
+    padding-top: 39px
+    padding-bottom: 40px
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: $color-white
+    box-shadow: 0 14px 28px rgba(0,0,0,0.10)
+    &:hover
+        transform: translateY(-14px)
+        transition: 0.3s
+    &:not(:last-child)
+        margin-right: 30px
+    &__icon
+        margin-bottom: 8px
+    &__title-fifth
+        margin-bottom: 23px
+    &__btn
+        text-decoration: none
+        color: $color-green-medium
+        font-weight: 500
+        font-size: 15px
+        line-height: 24px
+        letter-spacing: -0.5px
